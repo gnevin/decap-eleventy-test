@@ -19,6 +19,9 @@ collections:
     editor:
       preview: false
     fields:
+      - label: "Hero Image" 
+        name: "heroImage"
+        widget: image
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Blog"

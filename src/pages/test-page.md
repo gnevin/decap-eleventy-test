@@ -1,6 +1,7 @@
 ---
 title: Test Page
 description: Test page
+heroImage: https://via.placeholder.com/1440x600
 ---
 ## Test content
 
