@@ -19,7 +19,11 @@ collections:
         name: "home"
         file: "src/index.md"
         fields:
+          - label: "Hero Image" 
+            name: "heroImage"
+            widget: image
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro Text", name: "introText", widget: "markdown" }
           - { label: "Body", name: "body", widget: "markdown" }
   - label: "Pages"
     name: "pages"
