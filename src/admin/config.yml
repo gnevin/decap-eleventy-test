@@ -17,7 +17,7 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        file: "src/index.html"
+        file: "src/index.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
