@@ -2,7 +2,9 @@
 layout: default
 prism: true
 ---
-<img src="{{ heroImage }}" alt="">
+<figure>
+    <img src="{{ heroImage }}" alt="" class="landscape:aspect-[21/9] portrait:aspect-square object-cover w-full h-full">
+</figure>
 <div class="container max-w-4xl mt-6  px-6">
     <div class="pb-5 mb-5 border-b border-gray-100">
         <h1 class="font-bold text-5xl">{{title}}</h1>

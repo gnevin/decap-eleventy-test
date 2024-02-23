@@ -12,8 +12,17 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - label: "Page"
-    name: "page"
+  - label: "Home"
+    name: "home"
+    file: "src/index.html"
+    create: false
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Pages"
+    name: "pages"
     folder: "src/pages"
     create: true
     editor:
