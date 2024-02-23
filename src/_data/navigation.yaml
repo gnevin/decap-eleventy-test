@@ -1,6 +1,6 @@
 items:
-  - text: Link
-    url: "#"
+  - text: Test Page
+    url: /test-page
   - text: Link
     url: "#"
   - text: Link
