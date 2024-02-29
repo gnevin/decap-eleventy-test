@@ -15,6 +15,23 @@
         <!-- Custom Preview styles -->
         <script>
             CMS.registerPreviewStyle("/static/css/style.css");
+
+            var HomepagePreview = createClass({
+                render: function() {
+                    var entry = this.props.entry;
+                    var heroImage = entry.getIn(['data', 'heroImage']);
+                    var bg = this.props.getAsset(image);
+                    return h('div', {className: 'container mx-auto flex flex-col justify-center items-center py-10'},
+                        h('h1', {}, h('span', {className: ''}, entry.getIn(['data', 'title']) )),
+                        h('img', {src: bg.toString(), className: 'landscape:aspect-[21/9] portrait:aspect-square object-cover w-full h-full'}),
+                        h('section', {"className": "prose lg:prose-xl my-4 mx-auto"}, entry.getIn(['data', 'introText']) ),
+                        h('div', {}, this.props.widgetFor('body'))
+                    );
+                }
+            });
+
+            CMS.registerPreviewTemplate("homepage", HomepagePreview);
+
         </script>
     </body>
 </html>
