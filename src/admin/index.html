@@ -16,7 +16,7 @@
         <script>
             CMS.registerPreviewStyle("/static/css/style.css");
 
-            var HomepagePreview = createClass({
+            var HomePreview = createClass({
                 render: function() {
                     var entry = this.props.entry;
                     var heroImage = entry.getIn(['data', 'heroImage']);
@@ -30,7 +30,7 @@
                 }
             });
 
-            CMS.registerPreviewTemplate("homepage", HomepagePreview);
+            CMS.registerPreviewTemplate("home", HomePreview);
 
         </script>
     </body>
