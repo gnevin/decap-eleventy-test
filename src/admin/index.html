@@ -20,7 +20,7 @@
                 render: function() {
                     var entry = this.props.entry;
                     var heroImage = entry.getIn(['data', 'heroImage']);
-                    var bg = this.props.getAsset(image);
+                    var bg = this.props.getAsset(heroImage);
                     return h('div', {className: 'container mx-auto flex flex-col justify-center items-center py-10'},
                         h('h1', {}, h('span', {className: ''}, entry.getIn(['data', 'title']) )),
                         h('img', {src: bg.toString(), className: 'landscape:aspect-[21/9] portrait:aspect-square object-cover w-full h-full'}),
